@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dubai International Academy Al Barsha Research Journal</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Scholar Meta Tags -->
+  <meta name="citation_title" content="AI in Flight Management Systems: Adaptive Algorithms for Safer Aviation">
+  <meta name="citation_author" content="Sreeram Chittayil">
+  <meta name="citation_author" content="Dr. Athar">
+  <meta name="citation_author" content="Dr. Gillis">
+  <meta name="citation_publication_date" content="2025/09/21">
+  <meta name="citation_journal_title" content="Dubai International Academy Research Journal">
+  <meta name="citation_volume" content="1">
+  <meta name="citation_issue" content="1">
+  <meta name="citation_firstpage" content="1">
+  <meta name="citation_lastpage" content="15">
+  <meta name="citation_pdf_url" content="https://yourjournal.org/vol1/issue1/article1.pdf">
+</head>
+<body>
+<header>
+  <h1>Dubai International Academy Al Barsha Research Journal</h1>
+  <nav>
+    <a href="#" onclick="show('home')">Home</a>
+    <a href="#" onclick="show('submit')">Submit</a>
+    <a href="#" onclick="show('guidelines')">Guidelines</a>
+    <a href="#" onclick="show('published')">Published</a>
+    <a href="#" onclick="show('admin')">Admin</a>
+  </nav>
+</header>
+
+<!-- Home -->
+<section id="home" class="active">
+  <div class="logo-row">
+    <img src="https://i.postimg.cc/d1f0R0xH/IMG-3256.jpg" alt="Left Logo" class="side-logo left">
+    <img src="https://i.postimg.cc/dQX7rWMs/IMG-3255.webp" alt="DIA Logo" class="center-logo">
+    <img src="https://i.postimg.cc/8zJRDyNz/IMG-3282.jpg" alt="Right Logo" class="side-logo right">
+  </div>
+
+  <h2>Welcome</h2>
+  <p>Submit and read research in STEM, AI, Medicine, Social Sciences & Aerospace.</p>
+  <p>Published: <span id="count-published">0</span> | Under Review: <span id="count-under">0</span></p>
+
+  <h3>About the Journal</h3>
+  <p>
+    The DIAB Research Journal is a student- and faculty-led initiative at Dubai International Academy Al Barsha. 
+    Our mission is to provide a professional platform for publishing high-quality research in 
+    <strong>STEM</strong>, <strong>AI</strong>, <strong>Medicine</strong>, <strong>Social Sciences</strong>, and <strong>Aerospace</strong>.
+  </p>
+
+  <h3>Scope</h3>
+  <ul>
+    <li>Aerospace engineering (aerodynamics, avionics, propulsion, flight management systems)</li>
+    <li>Artificial Intelligence and Machine Learning</li>
+    <li>STEM innovations, sustainability, and interdisciplinary projects</li>
+    <li>Medicine and social sciences</li>
+  </ul>
+
+  <h3>Dual Submission Policy</h3>
+  <p>
+    The DIAB Research Journal operates under a <strong>dual submission policy</strong>. 
+    Authors are free to submit their work here while also submitting to other journals or conferences. 
+    Our priority is to help young researchers gain visibility and improve their work.
+  </p>
+  
+  <h3>Resources for Researchers</h3>
+  <p>
+    If you need help with your research work please contact the <strong>Editor-in-Chief</strong>. 
+    We can help you get in contact with the R&D section of our journal. Please remember that the purpose of the journal is to support early researchers, so please reach out for any form of support.
+  </p>
+
+  <h3>Our Team:</h3>
+  <div class="team">
+    <div class="member">
+      <h4>Sreeram Chittayil</h4>
+      <p><em>Editor-in-Chief</em></p>
+      <p>Contact: <a href="mailto:diab180038@diabstudents.com">diab180038@diabstudents.com</a></p>
+    </div>
+    <div class="member">
+      <h4>Dr. Athar</h4>
+      <h4>Dr. Gillis</h4>
+      <h4>Dr. Marras</h4>
+      <p><em>Editors & Reviewers</em></p>
+    </div>
+  </div>
+
+  <div class="banner">
+    <img src="https://i.postimg.cc/jdL61yzB/IMG-3193.jpg" alt="Journal Banner">
+  </div>
+
+  <div class="blue-footer">
+    <h3>Connect With Us</h3>
+    <p>
+      <a href="https://www.diabarsha.com" target="_blank">School Website</a> | 
+      <a href="https://www.instagram.com/diabarsha/?hl=en" target="_blank">Instagram</a>
+    </p>
+    <p>
+      Dubai International Academy, Al Barsha — fostering innovation, research, and leadership 
+      for the next generation of global changemakers.
+    </p>
+    <p>&copy; 2025 DIAB Research Journal. All Rights Reserved.</p>
+  </div>
+</section>
+
+<!-- Submit -->
+<section id="submit">
+  <h2>Submit Paper</h2>
+  <form id="submitForm">
+    <input name="title" placeholder="Title" required>
+    <input name="authors" placeholder="Authors and first authors email" required>
+    <textarea name="abstract" placeholder="Abstract" required></textarea>
+    <label>
+      Upload PDF
+      <input id="pdfFile" type="file" name="pdfFile" accept="application/pdf" required>
+    </label>
+    <button class="btn primary" type="submit">Submit</button>
+  </form>
+  <p id="submitStatus" class="status"></p>
+</section>
+
+<!-- Guidelines -->
+<section id="guidelines">
+  <h2>Submission Guidelines</h2>
+  <p>
+    The <strong>Dubai International Academy Al Barsha Research Journal</strong> is committed to 
+    maintaining high academic standards and providing a professional, student-driven 
+    platform for early researchers. Authors must carefully follow the guidelines below 
+    to ensure that their submission can be considered for peer review and publication.
+  </p>
+  <h3>1. Types of Accepted Submissions</h3>
+  <ul>
+    <li><strong>Original Research Articles</strong>: Present original findings in STEM, AI, Medicine, Social Sciences or Aerospace. 
+        Minimum word count: <strong>500 words</strong>, though most articles are 1000–6000 words.</li>
+    <li><strong>Review Articles</strong>: Provide a critical overview of existing work. 
+        Minimum word count: <strong>800 words</strong>, typically 3000–8000 words.</li>
+    <li><strong>Lab or experiment reports, proposals and Case Studies</strong>: Summaries of projects, experiments, 
+        or engineering solutions relevant to our scope.</li>
+  </ul>
+
+  <h3>2. Manuscript Structure</h3>
+  <p>We recommend the following structure:</p>
+  <ol>
+    <li><em>Title Page</em>: Title, author names, affiliations, and contact email.</li>
+    <li><em>Abstract</em>: 150–250 words summarizing the work.</li>
+    <li><em>Keywords</em>: 3–6 words or phrases.</li>
+    <li><em>Introduction</em>: State the problem and context.</li>
+    <li><em>Methods</em>: Explain research methodology or approach.</li>
+    <li><em>Results</em>: Present findings clearly (figures and tables encouraged).</li>
+    <li><em>Discussion</em>: Interpret results and compare with prior work.</li>
+    <li><em>Conclusion</em>: Summarize contributions and suggest future work.</li>
+    <li><em>References</em>: APA style consistently applied.</li>
+    <li><em>In-text citations</em>: APA format using the "(name, year)" format.</li>
+  </ol>
+
+  <h3>3. Formatting Requirements</h3>
+  <ul>
+    <li>Manuscripts must be in English.</li>
+    <li>PDF submission only (upload via our form).</li>
+    <li>Figures and tables must be clearly labeled and referenced in text.</li>
+    <li>Equations should be typeset using proper math editors (not screenshots).</li>
+  </ul>
+
+  <h3>4. Ethical Considerations</h3>
+  <ul>
+    <li>Submissions must be the authors’ original work — plagiarism is strictly prohibited.</li>
+    <li>All co-authors must approve the final version before submission.</li>
+    <li>Data integrity must be maintained; falsification or fabrication is grounds for rejection.</li>
+    <li>Human or animal studies must comply with relevant ethical standards.</li>
+  </ul>
+
+  <h3>5. Peer Review and Revisions</h3>
+  <ul>
+    <li>All articles undergo blind peer review.</li>
+    <li>Authors may receive reviewer comments requesting minor or major revisions.</li>
+    <li>Revised manuscripts should be re-submitted with a point-by-point response.</li>
+    <li>Decisions: Accepted, Minor Revision, Major Revision, or Rejected.</li>
+  </ul>
+
+  <h3>6. Dual Submission Policy</h3>
+  <p>
+    To empower students, we allow <strong>dual submissions</strong>. Authors can 
+    submit their article to this journal while also submitting elsewhere. 
+    We only request that authors inform us if their work is accepted by another venue, 
+    so we can avoid duplicate publication.
+  </p>
+
+  <h3>7. Final Checklist</h3>
+  <ul>
+    <li>✓ Title and abstract are complete and polished.</li>
+    <li>✓ Word count ≥ 500 (research) or ≥ 1000 (review).</li>
+    <li>✓ References formatted consistently.</li>
+    <li>✓ Figures/tables are included with captions.</li>
+    <li>✓ PDF uploaded via the submission form.</li>
+  </ul>
+</section>
+
+<!-- Published -->
+<section id="published">
+  <h2>Published Articles</h2>
+  <div id="loadingPub" style="display:none;">⏳ Loading...</div>
+  <div id="pubList"></div>
+</section>
+
+<!-- Admin -->
+<section id="admin">
+  <h2>Admin Dashboard</h2>
+  <input id="adminkey" placeholder="Enter key">
+  <button class="btn" onclick="unlock()">Unlock</button>
+  <p id="adminStatus"></p>
+  <h3>Under Review</h3>
+  <div id="loadingUnder" style="display:none;">⏳ Loading...</div>
+  <div id="underList"></div>
+  <h3>Published</h3>
+  <div id="pubListAdmin"></div>
+</section>
+
+<!-- Special Publish Page -->
+<section id="publishPage">
+  <h2>Finalize Publication</h2>
+  <form id="publishForm">
+    <label>Final Author Names<input name="finalAuthors" required></label>
+    <label>
+      Upload Edited PDF
+      <input id="finalPdf" type="file" name="finalPdf" accept="application/pdf" required>
+    </label>
+    <button class="btn primary" type="submit">Final Publish</button>
+  </form>
+  <p id="publishStatus" class="status"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
